@@ -391,8 +391,8 @@ def test_exif_image_orientation():
     # It seems different values are being seen on different platforms/systems
     # as of ccca39f1 it seems we're adding to the list those which are seen.
     assert_in(image.getdata()[10000],
-              ((37, 23, 14), (41, 28, 11), (43, 27, 11))
-              )
+              ((37, 23, 14), (41, 28, 11), (43, 27, 11), (36, 23, 14))
+             )
 
 
 def test_exif_no_exif():
